@@ -1,8 +1,19 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Cookie, Open_Sans } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+export const cookie = Cookie({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-cookie',
+})
+
+export const open_sans = Open_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-open-sans',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +26,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='es'>
+      <body className={`${cookie.variable} ${open_sans.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }
