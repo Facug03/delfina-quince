@@ -22,13 +22,19 @@ export default function Home() {
           }}
         />
 
-        <p className='font-open text-2xl flex items-center gap-1 pt-[20%]'>
-          <span className='text-[19px] font-cookie'>────────</span> 13-12-2023{' '}
-          <span className='text-[19px] font-cookie'>────────</span>
-        </p>
+        <div className='flex gap-1 pt-[20%] items-center'>
+          <hr className='h-[1px] bg-white w-20' />
+          <p className='font-open text-2xl flex items-center gap-1 '>
+            13-12-2023
+          </p>
+          <hr className='h-[1px] bg-white w-20' />
+        </div>
+
         <h1 className='text-8xl'>Delfina</h1>
         <h1 className='text-[40px]'>Mis 15 años</h1>
-        <p className='text-[19px]'>───────────────────────────────</p>
+
+        <hr className='h-[1px] bg-white w-72 mb-8' />
+
         <h3 className='font-open text-center'>
           “Te espero para compartir una noche mágica, inolvidable y única.”
         </h3>
@@ -51,7 +57,7 @@ export default function Home() {
         />
 
         <div className='absolute max-w-md w-full min-h-[75%] z-10 translate-x-[-50%] translate-y-[-50%] top-2/4 left-2/4'>
-          <Image src='/escudo.png' fill alt='escudo' />
+          <Image src='/escudo.png' fill alt='escudo' sizes='448px' />
         </div>
 
         <div className='bg-white h-64 w-64 rounded-full flex flex-col items-center justify-evenly z-20'>
