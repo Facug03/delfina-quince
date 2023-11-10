@@ -8,10 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        main: "url('/fondo-bella.webp')",
-        fondo: "url('/fondo.webp')",
-      },
       fontFamily: {
         cookie: ['var(--font-cookie)'],
         open: ['var(--font-open-sans)'],
