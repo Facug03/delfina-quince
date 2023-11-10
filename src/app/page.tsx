@@ -4,6 +4,7 @@ import bgBella from '../../public/fondo-bella.webp'
 import bgShapes from '../../public/fondo.webp'
 
 import Image from 'next/image'
+import Arrow from './ui/arrow-icon'
 
 export default function Home() {
   return (
@@ -38,6 +39,12 @@ export default function Home() {
         <h3 className='font-open text-center'>
           “Te espero para compartir una noche mágica, inolvidable y única.”
         </h3>
+
+        <div className='absolute top-[70%]'>
+          <Image src='/arrow.png' width={39} height={44} alt='arrow' />
+          <Image src='/arrow.png' width={39} height={44} alt='arrow' />
+          <Image src='/arrow.png' width={39} height={44} alt='arrow' />
+        </div>
 
         <Separator />
       </section>
