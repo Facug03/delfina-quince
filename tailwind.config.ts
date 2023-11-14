@@ -3,7 +3,7 @@ import type { Config } from 'tailwindcss'
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/ui/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -11,6 +11,10 @@ const config: Config = {
       fontFamily: {
         cookie: ['var(--font-cookie)'],
         open: ['var(--font-open-sans)'],
+      },
+      colors: {
+        primary: '#C79711',
+        secondary: '#95710C',
       },
     },
   },

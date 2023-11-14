@@ -27,7 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='es'>
-      <body className={`${cookie.variable} ${open_sans.variable}`}>
+      <body
+        className={`${cookie.variable} ${open_sans.variable} overflow-hidden`}
+      >
         {children}
       </body>
     </html>
