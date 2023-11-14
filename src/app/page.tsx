@@ -40,7 +40,7 @@ export default function Home() {
           className='hidden sm:block'
         />
 
-        <div className='flex gap-1 pt-[20%] sm:pt-[15%] items-center'>
+        <div className='flex gap-1 pt-[25%] sm:pt-[15%] items-center'>
           <hr className='h-[1px] bg-white w-20' />
           <p className='font-open text-2xl sm:text-3xl flex items-center gap-1 '>
             13-12-2023

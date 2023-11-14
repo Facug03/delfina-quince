@@ -18,7 +18,7 @@ export default function SuggestMusic() {
   })
 
   const isError =
-    message.current === '¡Asistencia confirmada correctamente!' ? false : true
+    message.current === '¡Música solicitada correctamente!' ? false : true
 
   useEffect(() => {
     if (isModalOpen) {
@@ -42,11 +42,11 @@ export default function SuggestMusic() {
         body: JSON.stringify(form),
       })
         .then(() => {
-          message.current = '¡Asistencia confirmada correctamente!'
+          message.current = '¡Música solicitada correctamente!'
           setShowSnackbar(true)
         })
         .catch(() => {
-          message.current = '¡Error confirmando la asistencia!'
+          message.current = '¡Error solicitando la música!'
           setShowSnackbar(true)
         })
         .finally(() => {
