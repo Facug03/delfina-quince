@@ -29,7 +29,7 @@ export default function Snackbar({
 
   return (
     <div
-      className={`${bg} text-white p-4 rounded-md fixed bottom-4 right-4 flex gap-3 items-center font-open text-xs md:text-lg`}
+      className={`${bg} text-white p-4 rounded-md fixed bottom-4 right-4 flex gap-3 items-center font-open text-xs md:text-lg z-50`}
     >
       {message}
       <button onClick={closeSnackbar} className='text-white'>

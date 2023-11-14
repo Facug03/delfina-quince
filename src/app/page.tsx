@@ -20,7 +20,6 @@ export default function Home() {
           quality={100}
           fill
           sizes='100vw'
-          priority
           style={{
             objectFit: 'cover',
             zIndex: -1,
@@ -33,7 +32,6 @@ export default function Home() {
           quality={100}
           fill
           sizes='100vw'
-          priority
           style={{
             objectFit: 'cover',
             objectPosition: 'top',
