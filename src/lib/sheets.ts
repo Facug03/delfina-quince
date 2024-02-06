@@ -8,5 +8,3 @@ const client = new auth.JWT(secrets.client_email, '', secrets.private_key, [
 ])
 
 export const googleSheets = sheets({ version: 'v4', auth: client })
-
-console.log({ googleSheets })

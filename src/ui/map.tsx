@@ -1,13 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import GoogleMapReact from 'google-map-react'
+import { NEXT_PUBLIC_MAP_KEY } from '@/config'
 
 const defaultProps = {
   center: {
-    // lat: -26.7624207,
-    // lng: -65.2446598,
     lat: -26.76146,
     lng: -65.243045,
   },
@@ -60,14 +58,12 @@ export default function Map() {
 
             <GoogleMapReact
               bootstrapURLKeys={{
-                key: 'AIzaSyBTZzGRDSiW_emG69ndWxY0OX1b-_p8sw0',
+                key: NEXT_PUBLIC_MAP_KEY,
               }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
               onGoogleApiLoaded={({ map, maps }) => renderMarkers(map, maps)}
-            >
-              <div>Marker</div>
-            </GoogleMapReact>
+            ></GoogleMapReact>
 
             <div className='pt-6'>
               <a
