@@ -1,4 +1,5 @@
-import { SHEET_ID, googleSheets } from '@/lib/sheets'
+import { SHEET_ID } from '@/config'
+import { googleSheets } from '@/lib/sheets'
 import { SuggestMusic } from '@/types'
 import { findRowForInsertion } from '@/utils/getLastRow'
 import { NextApiRequest, NextApiResponse } from 'next'

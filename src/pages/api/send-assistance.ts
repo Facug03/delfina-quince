@@ -1,4 +1,5 @@
-import { SHEET_ID, googleSheets } from '@/lib/sheets'
+import { SHEET_ID } from '@/config'
+import { googleSheets } from '@/lib/sheets'
 import { Assistance } from '@/types'
 import { findRowForInsertion } from '@/utils/getLastRow'
 import { NextApiRequest, NextApiResponse } from 'next'
@@ -13,8 +14,6 @@ export default async function handler(
     const data = JSON.parse(body) as Assistance
 
     const assitance = data.attendace ? 'Si' : 'No'
-
-    console.log(data.name)
 
     const rowForFirstFunction = await findRowForInsertion('A')
 

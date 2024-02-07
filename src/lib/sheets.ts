@@ -1,9 +1,7 @@
 import { auth, sheets } from '@googleapis/sheets'
-import secrets from '@/secrets.json'
+import { GOOGLE_EMAIL, GOOGLE_KEY } from '@/config'
 
-export const SHEET_ID = '172z9Z0VCn2Ee82OBFhtz4NW4zOe3W9HoCU7ZgwLcsF0'
-
-const client = new auth.JWT(secrets.client_email, '', secrets.private_key, [
+const client = new auth.JWT(GOOGLE_EMAIL, '', GOOGLE_KEY, [
   'https://www.googleapis.com/auth/spreadsheets',
 ])
 
