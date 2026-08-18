@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import { Cookie, Open_Sans } from 'next/font/google'
 import './globals.css'
 
-export const cookie = Cookie({
+const cookie = Cookie({
   subsets: ['latin'],
   display: 'swap',
   weight: '400',
   variable: '--font-cookie',
 })
 
-export const open_sans = Open_Sans({
+const open_sans = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-open-sans',
